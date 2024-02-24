@@ -6,7 +6,7 @@ void main() {
 }
 
 class ChatApp extends StatelessWidget {
-  const ChatApp({Key? key}) : super(key: key);
+  const ChatApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class ChatApp extends StatelessWidget {
 }
 
 class ChatScreen extends StatefulWidget {
-  const ChatScreen({Key? key}) : super(key: key);
+  const ChatScreen({super.key});
 
   @override
   _ChatScreenState createState() => _ChatScreenState();
@@ -233,11 +233,11 @@ class ChatMessageListItem extends StatelessWidget {
   final UserStatus status; // Add user status property
 
   const ChatMessageListItem({
-    Key? key,
+    super.key,
     required this.message,
     required this.formatDate,
     required this.status, // Add status parameter
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
